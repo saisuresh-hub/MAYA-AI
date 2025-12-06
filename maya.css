@@ -1,0 +1,510 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    body {
+        /* background-color: lightblue;
+        padding: 10px; */
+        margin-right: auto;
+        overflow-x: hidden !important;
+        ;
+
+    }
+}
+
+section {
+    padding: 20px 0;
+}
+
+/* ----nav-bar---- */
+.navbar {
+    border-top: 3px solid #0f0f0f22;
+    border-bottom: 3px solid #e6eaec;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+}
+
+.brand-logo {
+    height: 48px;
+    object-fit: contain;
+}
+
+.nav-center {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-center a {
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-btn {
+    background-color: #117a32;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    opacity: 0.95;
+}
+
+/* ----top-section----- */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.equal-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .equal-img {
+        height: auto;
+    }
+}
+
+.bg-img {
+    background-image: linear-gradient(to bottom, gray, white);
+}
+
+/* ----feature-section---- */
+
+.features-section {
+    background: linear-gradient(-90deg, #72bd20, #008738);
+    color: #fff;
+}
+
+.feature-box {
+    background-color: transparent;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    border-right: 1px solid hsla(0, 0%, 100%, .15);
+    justify-content: center;
+}
+
+.features-section .col-md-3:last-child .feature-box {
+    border-right: none;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-box {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -15px;
+}
+
+.text-box h5 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.text-box p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .feature-box {
+        flex-direction: column;
+        border-right: none;
+        gap: 15px;
+    }
+}
+
+/* ----categories-section---- */
+.section-centre {
+    text-align: center;
+}
+
+.feature-card {
+    border-radius: 5px;
+    padding: 28px;
+    margin: 5px;
+}
+
+.feature-title {
+    font-weight: 700;
+    margin: 0;
+}
+
+.bg-pastel-1 {
+    background: rgba(26, 182, 157, .07);
+}
+
+.bg-pastel-2 {
+    background: rgba(238, 74, 98, .07);
+}
+
+.bg-pastel-3 {
+    background: #f6f5ff;
+}
+
+.bg-pastel-4 {
+    background: #fffaf0;
+}
+
+.bg-pastel-5 {
+    background: rgba(142, 86, 255, .07);
+}
+
+.bg-pastel-6 {
+    background: rgba(249, 37, 150, .07);
+}
+
+.bg-pastel-7 {
+    background: rgba(88, 102, 235, .07);
+}
+
+.bg-pastel-8 {
+    background: rgba(248, 148, 31, .07);
+}
+
+.bg-pastel-9 {
+    background: rgba(57, 192, 250, .07);
+}
+
+/* -----about-section----- */
+.title-about {
+    color: #181818;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.39;
+}
+
+.pre-title {
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 14px;
+    letter-spacing: 1px;
+    color: #808080;
+}
+
+.section-title p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #808080;
+    margin: 15px 0 30px;
+}
+
+.features-list {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: #181818;
+    padding-left: 35px;
+    margin: 16px 0;
+    line-height: 1.73;
+}
+
+/* -----popular courses----- */
+.pc-pre-title {
+    color: #808080;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: -10px;
+}
+
+.pc-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.39;
+    color: #181818;
+}
+
+.course-level {
+    font-size: 15px;
+    font-weight: 500;
+    color: #008738;
+    background-color: rgba(26, 182, 157, .15);
+    border-radius: 3px;
+    padding: 1px 10px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.pcc-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.63;
+    color: #181818;
+}
+
+.course-meta {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.course-meta .divider {
+    width: 1px;
+    height: 16px;
+    background-color: #dcdcdc;
+}
+
+/* ---- browse more course ---- */
+.course-view-all {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.edu-btn {
+    border-radius: 5px;
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    background: #008738;
+    padding: 0 30px;
+    font-size: 17px;
+    font-weight: 540;
+}
+
+.counter-card {
+    background: #fff;
+    border-radius: 5px;
+    padding: 70px;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.counter-grid>div {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.count-number {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.text-title {
+    font-size: 13px;
+    color: #181818;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.green {
+    color: #119B4A;
+}
+
+.red {
+    color: #F55;
+}
+
+.orange {
+    color: #F9A825;
+}
+
+.purple {
+    color: #8A3FFC;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+}
+
+.border-right {
+    border-right: 1px solid #e5e5e5;
+}
+
+.counter-grid>div:nth-child(2) {
+    border-right: none;
+}
+
+@media (max-width: 576px) {
+    .counter-card {
+        padding: 24px;
+    }
+
+    .counter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .border-bottom,
+    .border-right {
+        border-right: none;
+    }
+}
+
+/* ----testinomials---- */
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 30px;
+    height: 100%;
+}
+
+.testi-pre-title {
+    font-size: 15px;
+    color: #808080;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.test-title {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.39;
+    color: #181818;
+}
+
+.testi-para {
+    font-size: 16px;
+    line-height: 1.73;
+    font-weight: 400;
+    color: grey;
+    margin: 0 0 20px;
+}
+
+.testi-name {
+    font-weight: 500;
+    margin: 0 0 2px;
+    font-size: 18px;
+    color: #181818;
+}
+
+/* ----our-partners---- */
+.brand-grid-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.brand-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .brand-grid-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-grid-wrap {
+        grid-template-columns: 1fr;
+    }
+}
+
+.op-pre-title {
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: grey;
+}
+
+.op-title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #181818;
+}
+
+.op-para {
+    font-size: 15px;
+    line-height: 1.73;
+    font-weight: 400;
+    color: grey;
+}
+
+/* ------footer----- */
+.footer-section .information-list span {
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.footer-section .information-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Social colors */
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-youtube {
+    color: #ff0000;
+}
+
+.fa-facebook {
+    color: #1877f2;
+}
+
+.fa-instagram {
+    color: #e4405f;
+}
+
+.feature-card .feature-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+
+}
